@@ -1,0 +1,137 @@
+
+@font-face {
+    font-family:'bright';
+    src:url("../fonts/bright.ttf");
+}
+@font-face {
+    font-family:'carsond';
+    src: url("../fonts/carsond.otf");
+}
+header{
+    background: #D2CFD6;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#ndc{
+    height:100px;
+    float: left;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+nav{
+    min-height: 40px;
+    text-align: right;
+}
+#navLinks{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding:15px 0 15px 0;
+    font-family: 'carsond', sans-serif;
+    position: relative;
+}
+nav a{
+    color: black;
+}
+nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+nav a::before{
+    content:"";
+    display: block;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
+.backgroundImage{
+    background: url("../images/background2.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.greeting{
+    font-size: 100px;
+    font-family: 'bright', cursive;
+    text-align: center;
+    color: papayawhip;
+    padding-top: 150px;
+    display: none;
+}
+body{
+    background-color: #A0ADBC;
+}
+.itemHead{
+    text-align: center;
+    font-family: 'bright', cursive;
+    font-size: 100px;
+}
+.personalInfo{
+    background: #A1ADBD;
+}
+.detailedInfo{
+    margin-left: 2rem;
+}
+#profilePic{
+    height:300px;
+    width: 100%;
+    border: 3px solid black;
+}
+.profileIcon{
+    height: 40px;
+    width: 40px;
+    margin-left: 109px;
+}
+.Project > * {
+    height:250px;
+    border: 3px solid black;
+    /*padding: 0;*/
+}
+.smallDescription{
+    font-family: 'carsond', sans-serif;
+    text-align: center;
+}
+.projectDetails{
+    padding-top: 90px;
+
+}
+.linkedin{
+    border-radius: 10px;
+    height: 30px;
+}
+.skype{
+    border-radius: 10px;
+    height: 30px;
+}
+.github{
+    border-radius: 10px;
+    height: 30px;
+}
+.infoIcon1{
+    max-height: 50px;
+}
